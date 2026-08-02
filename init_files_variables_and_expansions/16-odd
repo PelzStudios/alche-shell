@@ -1,2 +1,2 @@
 #!/bin/bash
-while read line; do echo "$line"; read line; done
+python3 -c 'import sys;print("".join(sys.stdin.readlines()[::2]),end="")'
