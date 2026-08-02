@@ -1,2 +1,0 @@
-#!/bin/bash
-python3 -c 'import sys;print("".join(sys.stdin.readlines()[::2]),end="")'
