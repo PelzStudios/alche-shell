@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script displays usernames, user IDs, and home directories from passwd
 
-while IFS=: read -r username password userid groupid info home shell
+while IFS=: read -r username _ userid _ _ home _
 do
     echo "$username:$userid:$home"
 done < /etc/passwd
